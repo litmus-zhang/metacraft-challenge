@@ -10,8 +10,8 @@ contract CrowdFund {
         uint deadline
     );
     event CampaignContributed(string name, uint amount, uint total);
-    event DeadlineReached(string name, uint total);
-    event CampaignCreated(string name, uint goal, uint deadline);
+    event DeadlineReached(string campaignName, uint total);
+    //event CampaignCreated(string name, uint goal, uint deadline);
 
     //Campaign struct
     struct Campaign {

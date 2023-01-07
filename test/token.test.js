@@ -6,7 +6,7 @@ describe('Token', () => {
     });
 
     beforeEach(async () => {
-        this.token = await this.Token.deploy(1000000);
+        this.token = await this.Token.deploy();
         await this.token.deployed();
     });
 
