@@ -10,7 +10,7 @@ Functional Requirements:
 To Run this project:
 -  clone the repo locally 
   ` 
-  git clone 
+  git clone https://github.com/litmus-zhang/metacraft-challenge.git
   `
 -  install all dependency for the project by running 
   `
