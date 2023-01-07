@@ -1,13 +1,30 @@
-# Sample Hardhat Project
+# Upgradable Crowdfunding Contract
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
+Functional Requirements:
+1. Funds take the form of a custom ERC20 token
+2. Crowdfunded projects have a funding goal
+3. When a funding goal is not met, customers can get a refund of their pledged funds
+4. dApps using the contract can observe state changes in transaction logs
+5. Optional bonus: the contract is upgradeable
 
-Try running some of the following tasks:
-
-```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat run scripts/deploy.js
-```
+To Run this project:
+-  clone the repo locally 
+  ` 
+  git clone 
+  `
+-  install all dependency for the project by running 
+  `
+  npm install
+  `
+- run a local blockchain to test the contract with the command below
+ `
+ npx hardhat node
+ `
+- run the contract locally with the command
+  `
+  npm run deploy:local
+  `
+- interact with the contract in the console using the command:
+ `
+ npm run console
+ `
