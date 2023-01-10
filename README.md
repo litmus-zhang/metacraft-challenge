@@ -28,3 +28,4 @@ To Run this project:
  `
  npm run console
  `
+- To upgrade the smart contract run the the command : ` npm run deploy:upgrade`
