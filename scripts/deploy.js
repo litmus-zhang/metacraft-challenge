@@ -1,9 +1,4 @@
 const main = async () => {
-    const Token = await ethers.getContractFactory('Token');
-    console.log('Deploying Token...');
-    const token = await Token.deploy();
-    await token.deployed();
-    console.log('Token deployed to:', token.address);
 
     const CrowdFund = await ethers.getContractFactory('CrowdFund');
     console.log('Deploying CrowdFund...');

@@ -67,5 +67,9 @@ contract CrowdFund {
         //emit event
         emit DeadlineReached(campaign.name, campaign.total);
     }
+
+    function getAllCampaigns() public view returns (Campaign[] memory){
+        return campaigns;
+    }
 }
 

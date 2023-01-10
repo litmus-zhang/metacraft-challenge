@@ -1,10 +1,91 @@
 {
   "manifestVersion": "3.2",
-  "proxies": [],
+  "admin": {
+    "address": "0xDc64a140Aa3E981100a9becA4E685f962f0cF6C9",
+    "txHash": "0x5bb5446a026f0b1d8df945e8b8656ebaa112f7fc03fd6568c6104f9d42f39805"
+  },
+  "proxies": [
+    {
+      "address": "0x5FC8d32690cc91D4c39d9d3abcBD16989F875707",
+      "txHash": "0x51b2cc2f3c50e02452fb72948700d61c5c31d5f2a2d4c40fb0f54e43dc667340",
+      "kind": "transparent"
+    }
+  ],
   "impls": {
     "7c6f49dec8ea0cea8fdae86beb303ceb667a9b2a40a264fd6b60eb5fadd9c991": {
-      "address": "0xe7f1725E7734CE288F8367e1Bb143E90bb3F0512",
-      "txHash": "0x52c5f4d6c0c74a37c0899aca076c0981fb70449d933fd1e20f7a149a8e184883",
+      "address": "0xCf7Ed3AccA5a467e9e704C703E8D87F634fB0Fc9",
+      "txHash": "0x8d29852da01fa1c2736d5511d87cefa59ee73a1b42b06130453f6bcb78800fff",
+      "layout": {
+        "solcVersion": "0.8.17",
+        "storage": [
+          {
+            "label": "campaigns",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_array(t_struct(Campaign)748_storage)dyn_storage",
+            "contract": "CrowdFund",
+            "src": "contracts/CrowdFund.sol:25"
+          }
+        ],
+        "types": {
+          "t_address_payable": {
+            "label": "address payable",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_struct(Campaign)748_storage)dyn_storage": {
+            "label": "struct CrowdFund.Campaign[]",
+            "numberOfBytes": "32"
+          },
+          "t_string_storage": {
+            "label": "string",
+            "numberOfBytes": "32"
+          },
+          "t_struct(Campaign)748_storage": {
+            "label": "struct CrowdFund.Campaign",
+            "members": [
+              {
+                "label": "name",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "goal",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "deadline",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "total",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "3"
+              },
+              {
+                "label": "owner",
+                "type": "t_address_payable",
+                "offset": 0,
+                "slot": "4"
+              }
+            ],
+            "numberOfBytes": "160"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          }
+        }
+      }
+    },
+    "ff70b417ae04654cee93e07c75ec1400421856ca034d305c10d820bad813e92a": {
+      "address": "0x0165878A594ca255338adfa4d48449f69242Eb8F",
+      "txHash": "0xf24a187e399e530fb9c325b31aa3c2a794441a827442279605bd81a227672b00",
       "layout": {
         "solcVersion": "0.8.17",
         "storage": [
@@ -14,7 +95,7 @@
             "slot": "0",
             "type": "t_array(t_struct(Campaign)36_storage)dyn_storage",
             "contract": "CrowdFund",
-            "src": "contracts\\CrowdFund.sol:25"
+            "src": "contracts/CrowdFund.sol:25"
           }
         ],
         "types": {

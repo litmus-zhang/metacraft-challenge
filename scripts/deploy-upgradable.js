@@ -4,7 +4,7 @@ const main = async () => {
 
     const CrowdFund = await ethers.getContractFactory('CrowdFund');
     console.log('Deploying CrowdFund...');
-    const crowdFundV2 = await upgrades.deployProxy(CrowdFund,['Test', 100, 100000], { initializer: 'createCampaign' });
+    const crowdFundV2 = await upgrades.deployProxy(CrowdFund,['Sample', 100, 100000], { initializer: 'createCampaign' });
     await crowdFundV2.deployed();
     console.log('CrowdFund deployed to:', crowdFundV2.address);
 };
